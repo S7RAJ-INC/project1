@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar with Profile and Side Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="internship-navbar">
+        <div class="internship-container">
+            <div class="internship-navbar-content">
+                <div class="internship-search-bar">
+                    <input type="text" placeholder="Search">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="internship">
+                    <button class="vitto-button">
+                        <span>K. Anderson</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.64 1.64a.5.5 0 0 1 .707 0l6.5 6.5 6.5-6.5a.5.5 0 0 1 .707.707l-7 7a.5.5 0 0 1-.707 0l-7-7a.5.5 0 0 1 0-.707z"/>
+                        </svg>
+                    </button>
+                    <div class="internship-dropdown">
+                        <ul>
+                            <li><a href="#">My Profile</a></li>
+                            <li><a href="#">Account Settings</a></li>
+                            <li><a href="#">Need Help?</a></li>
+                            <li><a href="#">Sign Out</a></li>
+                        </ul>    
+                    </div>
+                </div>
+        </div>
+    </nav>
+
+    <div class="internship-side-bar">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAW1JREFUSEvlluFNw0AMhd1N6CYwCXQSYBJgkrIJjEI/Ka4elp340kYV4n61iXWf3zs7vp3daO1uxLU/Cb4zs++1jq1RDPDJzJ4n8KeZvY4mMQJWYBSK8qEEuuCXSaECUclCuS8S+Dj9IX52dcAo/ZJdAL6LtbwHjv2+HiYHSngHfG9mx2kHFB1k08r+q4OjpWqzqtsMnBUXZ+uJbA5W6/VINgdrjVwVTFs8nqqYIsqWg2PcYltVVb0E9CRorbnEygQyMK2DbbGC2YTiqdQ7JIvj2V4ti+DYs/ErlPVtpiqL+1VwI2A2ewtuICKCq7g2WK3mt1oMLFruI7KKGwbr0bg6JpF/RrNqz+JWg6lgnzpaCxFcxa0Cx6pkEnHec73NO427CDx3GfAkKNgsjnY6X5WyPs6Gvp9ZNY1UOVbHOEYpM/y8qi/XkjK/DLidVULx0rAI9oCYQLVRN64N1gQ6V9n2lbdz9SmK97LH/w/8A0/idx+Gn2ihAAAAAElFTkSuQmCC" alt="Dashboard Icon" class="dashboard-icon">
+                    Dashboard
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAQtJREFUSEvtltERwiAQRDedaCdaiVqJWol2op1oJ5rNcJmTATkImhmFP2O4d28hJB1mGt1MXDTw15L3o94C2ANYVO7gDuDY1z1LXQ0m7FYZ6JdbA7jyogYfnC2vs8Pa1qy7E+sYmJ2dKsApQNjFqTNuCkaNpSHCV4UNjJA+yYcVvHRx836Cc+zFclhLN8xgTmJELCLDYq8tOY/7RObxdzJqgRHOJqSBmH3IUm9WqWcGc0LKPmWpH6ks8Dt7aUzuCVlOBsfsQ2sZO4eKjHUxvfYpyyrGuog8Ltxw1jHZ2Ary72vgIZGcTfIbUfPrg+fqJ8f48vE/fRj3pvA1mGr45Whtn7epuKr9/39RPwGVOVAfVQ5vVAAAAABJRU5ErkJggg==" alt="Components Icon" class="components-icon">
+                    Components
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAR9JREFUSEvtVsERgkAMXDrRStRK1ErUSrQT7URLkXU8JuS4XAgPeJAZZuC43LKbkKTBTNbMhIvFA+8nKvMBwKszi/EGwB3AVNAEdmtvrunBAuamy0Sm2n2bmFvAzz9bSnQOfMCxBTkpP57z4JoH+AXgEAAeUqyTuwTMuDK+jDOB6SCNazUbBUwwLc8QAIEpWy9T1UY3MNm9azTEe8bKir0bWG60YiqTZuxfMRhjCew90Lsv+5el4wpcyrOIMqvUvZIZkXDNapmQocrlldBqFizBvKRVK5fuRtJ5F5xK2FA4CPysVLm8vcLTHnkWQUmm62YSmD2YU4fXogNCxpgLabjTsdEfk4YDL+OMjDWBlJhno6pXIrlv8QN9hJTpMxvjL9djVh83tjVdAAAAAElFTkSuQmCC" alt="Form Icon" class="form-icon">
+                    Forms
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAPhJREFUSEvtVtsNwjAMdCcBJgEmASYBJgEmaZkENoEciiPjWs2Po+QjliK1Se2L3fNjoEoyVMKl5oB3zpF4ExFWEu3xLXxwdAZlc9fwcOEXCbwmolchUDa7Yc8lMG5zLgx8IqI7MJoDngzPmXAzogQv8JuwIEu6WY+tNPtEw38kiXvyN2ldyZ0O/AvYUrhw3kMtie9GrlJ1JMvqasDIVS1cTlEgnupwGwoHFxituxKNJ+txLyA9j9Mk4d0k9garx7iHRv5Q5wfBXK2L7oSRCmKyGunAxkvlccoWa9jDBbipe14geatHHwniPd7OppLmBnrPEJu2qnn8BWI6Zh/q43g+AAAAAElFTkSuQmCC" alt="Tables Icon" class="tables-icon">
+                    Tables
+                </a>
+            </li>
+             <li>
+                <a href="#">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAK1JREFUSEvtlsENgCAQBJdO7ETtRDuxFDvRUuxE2QQfBiWQO0UNlxATHozMgp5BpjKZuPgduALAwZrPrN6148kCGwdtC5gGNFR3Ls/FPken9RHVZ5AC9g52asYDgBoA8+wDeaqrjs2zgJMylmgVqS5g5iSxcMg5dI8lkG9mzB85i18pDpZkLlr1rX3gVcb7zrTgXt91BV61iG4dj/M6cDbVyqb95VIbAbUXygbeAIDLax9AwrS3AAAAAElFTkSuQmCC" alt="Charts Icon" class="charts-icon">
+                    Charts
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
